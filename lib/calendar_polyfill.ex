@@ -57,6 +57,8 @@ defmodule CalendarPolyfill do
     def translate_time_unit(unit) do
       case unit do
         :microseconds -> :micro_seconds
+        :milliseconds -> :milli_seconds
+        :nanoseconds -> :nano_seconds
         _ -> unit
       end
     end
